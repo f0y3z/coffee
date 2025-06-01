@@ -139,7 +139,7 @@ body {margin: 0; padding: 0;}
 
 
 .sec3 {
-    min-height: 95vh;
+    min-height: 90vh;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -147,19 +147,23 @@ body {margin: 0; padding: 0;}
     margin: 0;
 }
 .headdd {
-    padding: 50px 0px;
+    padding: 0px 0px;
     display: flex;
     justify-content: center;
     color: rgb(107, 69, 24);
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
     text-shadow: #30261C;
 }
 .gallery {
     display: flex;
     justify-content: center;
-    padding: 30px 30px;
-    gap: 40px;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 50px;
+}
+.vi {
+    padding: 0px 0px 50px 0px;
 }
 .element{
     height: 300px;
@@ -183,4 +187,30 @@ body {margin: 0; padding: 0;}
     transform: scale(0.8);
     transition: 0.5s;
     box-shadow: 0px 0px 39px rgb(97, 55, 4);
+}
+
+
+.new {
+    min-height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+.sob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.elem {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #30261C;
+    color: #ffffff;
+    border: 10px solid brown;
+    border-radius: 16px;
 }
