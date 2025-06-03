@@ -156,18 +156,20 @@ body {margin: 0; padding: 0;}
     text-shadow: #30261C;
 }
 .gallery {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 30px 0px;
     gap: 50px;
 }
 .vi {
+    width: 100vw;
     padding: 0px 0px 50px 0px;
 }
 .element{
-    height: 300px;
-    width: 400px;
+    height: 50%;
+    width: 25%;
     border-radius: 32px;
     box-shadow: 5px 5px 5px rgb(85, 85, 85);
     background-color:#E2D9CB;
@@ -176,18 +178,29 @@ body {margin: 0; padding: 0;}
     box-shadow: 4px 4px 5px  rgb(107, 69, 24);  
     transform: scale(1.1);
     transition: 0.5s;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(107, 69, 24);
 }
 .gallery img {
-    height: 300px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 32px;
+    box-shadow: 0px 2px 2px rgb(37, 24, 7);
 }
 .gallery img:hover{
     transform: scale(0.8);
     transition: 0.5s;
     box-shadow: 0px 0px 39px rgb(97, 55, 4);
 }
+.gallery h1{
+    text-align: center;
+}
+/* .gallery h1:hover{
+    color: rgb(255, 0, 0);
+} */
 
 
 .new {
@@ -231,9 +244,9 @@ body {margin: 0; padding: 0;}
         justify-content: space-evenly;
         align-items: center;
         background-color:#E2D9CB;
-        border-radius: 4px;
-        padding: 20px 0px;
-        margin: 20px 0px;
+        border-radius: 16px;
+        padding: 10px 0px;
+        margin: 15px 0px;
     }
     .navelmob img{
         width: 90%; 
