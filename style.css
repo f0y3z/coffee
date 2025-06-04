@@ -1,4 +1,4 @@
-body {margin: 0; padding: 0;}
+body {margin: 0; padding: 0;    overflow-x: hidden;}
 .first-section{
     min-height: 100vh;
     background-image: url(images/image.jpg);
@@ -53,6 +53,7 @@ body {margin: 0; padding: 0;}
     height: 26;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #30261c2a;
 }   
 .navel{
     display: flex;
@@ -139,7 +140,8 @@ body {margin: 0; padding: 0;}
 
 
 .sec3 {
-    min-height: 90vh;
+    height: 100vh;
+    width: 100vw;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -147,46 +149,40 @@ body {margin: 0; padding: 0;}
     margin: 0;
 }
 .headdd {
-    padding: 0px 0px;
-    display: flex;
-    justify-content: center;
+    height: 20%;
     color: rgb(107, 69, 24);
     font-size: 40px;
     font-weight: bolder;
     text-shadow: #30261C;
+    text-align: center;
 }
+
+
 .gallery {
     width: 100%;
+    height: 35%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 30px 0px;
-    gap: 50px;
-}
-.vi {
-    width: 100vw;
-    padding: 0px 0px 50px 0px;
+    margin-bottom: 5%;
 }
 .element{
-    height: 50%;
+    height: 100%;
     width: 25%;
     border-radius: 32px;
     box-shadow: 5px 5px 5px rgb(85, 85, 85);
     background-color:#E2D9CB;
+    color: #ffffff;
 }
 .element:hover{
     box-shadow: 4px 4px 5px  rgb(107, 69, 24);  
     transform: scale(1.1);
     transition: 0.5s;
-    font-size: larger;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(107, 69, 24);
 }
 .gallery img {
+    object-fit: cover;
     height: 100%;
     width: 100%;
-    object-fit: cover;
     border-radius: 32px;
     box-shadow: 0px 2px 2px rgb(37, 24, 7);
 }
@@ -197,36 +193,14 @@ body {margin: 0; padding: 0;}
 }
 .gallery h1{
     text-align: center;
+    font-size: large;
+    font-weight: bolder;
 }
 /* .gallery h1:hover{
     color: rgb(255, 0, 0);
 } */
 
 
-.new {
-    min-height: 100vh;
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-}
-
-.sob {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-.elem {
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #30261C;
-    color: #ffffff;
-    border: 10px solid brown;
-    border-radius: 16px;
-}
 
 
 @media (max-width: 1200px){
@@ -234,23 +208,23 @@ body {margin: 0; padding: 0;}
         display: none;
     }   
     .navber-mobile{
-        display: block;
-
+        display: flex;
     }
     .navelmob{
+        width: 90%;
         position: fixed;
-        width: 100vw;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         background-color:#E2D9CB;
-        border-radius: 16px;
+        border-radius: 20px;
         padding: 10px 0px;
-        margin: 15px 0px;
+        margin-top: 15px;
+        margin-left: 5%;
     }
     .navelmob img{
-        width: 90%; 
-        height: 90%;
+        width: 70%; 
+        height: 70%;
     }
     .navelmob a{
         display: flex;
